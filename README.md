@@ -1,8 +1,8 @@
-# Supplementary Materials for CVPR Paper Submission(ID 2087)
+# Supplementary Materials for ICIP Paper Submission(ID 1042)
 
 ## DiTVR: Zero-Shot Diffusion Transformer for Video Restoration
 
-This repository contains the supplementary materials for our CVPR submission titled **"DiTVR: Zero-Shot Diffusion Transformer for Video Restoration"**.
+This repository contains the supplementary materials for our ICIP submission titled **"DiTVR: Zero-Shot Diffusion Transformer for Video Restoration"**.
 
 ### Contents
 
