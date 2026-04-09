@@ -2,50 +2,38 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Supplementary materials for CVPR Workshop NTIRE paper submission (Paper ID 110) on zero-shot diffusion transformer video restoration">
-  <meta property="og:title" content="DiTVR: Zero-Shot Diffusion Transformer for Video Restoration"/>
-  <meta property="og:description" content="Supplementary materials for CVPR Workshop NTIRE paper submission (Paper ID 110) on video restoration using diffusion transformers"/>
-  <meta property="og:url" content=""/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
+  <meta name="description" content="Official project page for DiTVR: Zero-Shot Diffusion Transformer for Video Restoration, including teaser videos, benchmark comparisons, and paper resources.">
+  <meta property="og:title" content="DiTVR: Zero-Shot Diffusion Transformer for Video Restoration">
+  <meta property="og:description" content="Official project page for DiTVR with teaser videos, benchmark comparisons, and paper resources.">
+  <meta property="og:url" content="https://ree1s.github.io/DITVR-CVPRW/">
+  <meta property="og:image" content="https://ree1s.github.io/DITVR-CVPRW/">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <meta name="twitter:title" content="DiTVR: Zero-Shot Diffusion Transformer for Video Restoration">
-  <meta name="twitter:description" content="Supplementary materials for CVPR Workshop NTIRE paper submission (Paper ID 110) on video restoration using diffusion transformers">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="">
+  <meta name="twitter:description" content="Official project page for DiTVR with teaser videos, benchmark comparisons, and paper resources.">
+  <meta name="twitter:image" content="https://ree1s.github.io/DITVR-CVPRW/">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="video restoration, diffusion transformer, zero-shot, super-resolution, denoising, CVPR Workshop, NTIRE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>DiTVR: Zero-Shot Diffusion Transformer for Video Restoration</title>
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -55,103 +43,119 @@
               DiTVR: Zero-Shot Diffusion Transformer for Video Restoration
             </h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">Anonymous Authors</span>
+              <span class="author-block">Sicheng Gao &nbsp;|&nbsp; Nancy Mehta &nbsp;|&nbsp; Zongwei Wu &nbsp;|&nbsp; Radu Timofte</span>
             </div>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">Paper ID 110</span>
+              <span class="author-block">Computer Vision Lab, CAIDAS &amp; IFI, University of Wurzburg</span>
+            </div>
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://ree1s.github.io/DITVR-CVPRW/" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Project Page</span>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/combined_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Our method is capable of performing multiple video restoration tasks including super-resolution, denoising, deblurring, and colorization.
-      </h2>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/combined_video.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          DiTVR performs multiple video restoration tasks including super-resolution, denoising, deblurring, and colorization.
+        </h2>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Video restoration aims to reconstruct high-quality video sequences from low-quality inputs, addressing tasks such as super-resolution, denoising, and deblurring. Traditional regression-based methods often produce unrealistic details and require extensive paired datasets, while generative diffusion models face challenges in ensuring temporal consistency. To overcome these limitations, we introduce an anonymous zero-shot video restoration framework that leverages a pre-trained Diffusion Transformer operating directly in pixel space. Unlike prior methods that utilize optical flow solely for structural guidance, our framework integrates a spatiotemporal neighbor cache, trajectory-aware attention, and a flow-guided diffusion sampler, all driven by optical flow trajectories extracted from low-quality inputs. These components enhance spatial alignment and robust temporal coherence across frames. Additionally, our flow-guided diffusion sampler refines neglected detail improvement during inference, ensuring temporal alignment and realistic detail simultaneously. Extensive experiments show that the proposed method achieves state-of-the-art performance on zero-shot video restoration benchmarks, excelling in temporal consistency and high-fidelity restoration without task-specific training.
-          </p>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Video restoration aims to reconstruct high-quality video sequences from low-quality inputs, addressing tasks such as super-resolution, denoising, and deblurring. Traditional regression-based methods often produce unrealistic details and require extensive paired datasets, while generative diffusion models face challenges in ensuring temporal consistency. To overcome these limitations, we introduce a zero-shot video restoration framework that leverages a pre-trained Diffusion Transformer operating directly in pixel space. Unlike prior methods that utilize optical flow solely for structural guidance, our framework integrates a spatiotemporal neighbor cache, trajectory-aware attention, and a flow-guided diffusion sampler, all driven by optical flow trajectories extracted from low-quality inputs. These components enhance spatial alignment and robust temporal coherence across frames. Additionally, our flow-guided diffusion sampler refines detail reconstruction during inference, ensuring temporal alignment and realistic restoration simultaneously.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
-<!-- Results Table -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Comparison of Different Frequency Components</h2>
-        <div class="content has-text-centered">
-          <table class="table is-bordered is-striped is-narrow is-centered" style="width: 50%; margin: 0 auto;">
-            <thead>
-              <tr>
-                <th>Band</th>
-                <th>PSNR</th>
-                <th>WE</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>LF</td>
-                <td>30.61</td>
-                <td><strong>1.614</strong></td>
-              </tr>
-              <tr>
-                <td>HF</td>
-                <td>30.49</td>
-                <td>2.037</td>
-              </tr>
-              <tr>
-                <td>ALL</td>
-                <td><strong>30.63</strong></td>
-                <td>1.964</td>
-              </tr>
-            </tbody>
-          </table>
-                     <p class="has-text-justified" style="margin-top: 1rem;">
-             As shown in the table above, degrading only the low-frequency (LF) band is effective as LF components capture stable structural features, reducing noise impact and preserving essential content, leading to better WE with competitive PSNR.
-           </p>
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
- <!-- End Results Table -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Comparison of Different Frequency Components</h2>
+          <div class="content has-text-centered">
+            <table class="table is-bordered is-striped is-narrow is-centered" style="width: 50%; margin: 0 auto;">
+              <thead>
+                <tr>
+                  <th>Band</th>
+                  <th>PSNR</th>
+                  <th>WE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>LF</td>
+                  <td>30.61</td>
+                  <td><strong>1.614</strong></td>
+                </tr>
+                <tr>
+                  <td>HF</td>
+                  <td>30.49</td>
+                  <td>2.037</td>
+                </tr>
+                <tr>
+                  <td>ALL</td>
+                  <td><strong>30.63</strong></td>
+                  <td>1.964</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="has-text-justified" style="margin-top: 1rem;">
+              Degrading only the low-frequency band is effective because it preserves stable structural information while reducing noise sensitivity, resulting in better warping error with competitive PSNR.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <!-- Memory Comparison Table -->
- <section class="section hero is-light">
-   <div class="container is-max-desktop">
-     <div class="columns is-centered has-text-centered">
-       <div class="column is-four-fifths">
-         <h2 class="title is-3">Memory Usage Comparison</h2>
-         <div class="content has-text-centered">
-                       <table class="table is-bordered is-striped is-narrow is-centered" style="width: 50%; margin: 0 auto;">
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Memory Usage Comparison</h2>
+          <div class="content has-text-centered">
+            <table class="table is-bordered is-striped is-narrow is-centered" style="width: 50%; margin: 0 auto;">
               <thead>
                 <tr>
                   <th>Method</th>
@@ -169,7 +173,7 @@
                 </tr>
                 <tr>
                   <td>Extended Attention</td>
-                  <td><strong>11.01GB</strong></td>
+                  <td>11.01GB</td>
                 </tr>
                 <tr>
                   <td>Our TAttn with STNC</td>
@@ -177,179 +181,141 @@
                 </tr>
               </tbody>
             </table>
-                       <p class="has-text-justified" style="margin-top: 1rem;">
-              Our STNC + Flash Attention reduces self-Attention memory from OOM to <strong>9.54GB</strong>. For temporal Attention, zero-shot methods like TokenFlow require <strong>11.01GB</strong> with extended Attention, while our TAttn with STNC uses only <strong>3.68GB</strong>. By selecting matching patches via flow trajectories, our temporal cache supports both stages, enabling block-based flash Attention and ensuring temporal consistency with minimal memory overhead.
+            <p class="has-text-justified" style="margin-top: 1rem;">
+              The proposed design reduces memory usage substantially in both self-attention and temporal attention, while preserving temporal consistency through trajectory-guided cache selection.
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Memory Comparison Table -->
 
-  <!-- Optical Flow Comparison Table -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Optical Flow Model Comparison on Vid4 Dataset</h2>
+          <h2 class="title is-3">Optical Flow Model Comparison on Vid4</h2>
           <div class="content has-text-centered">
-                         <table class="table is-bordered is-striped is-narrow is-centered" style="width: 60%; margin: 0 auto;">
-               <thead>
-                 <tr>
-                   <th>Method</th>
-                   <th>Warping Error Difference</th>
-                   
-                 </tr>
-               </thead>
-               <tbody>
-                 <tr>
-                   <td>Ours (GMFlow vs RAFT)</td>
-                   <td><strong>1.08</strong> (lower)</td>
-                   
-                 </tr>
-                 <tr>
-                   <td>DiffIR2VR (GMFlow vs RAFT)</td>
-                   <td><strong>1.648</strong> (lower)</td>
-                   
-                 </tr>
-               </tbody>
-             </table>
-                         <p class="has-text-justified" style="margin-top: 1rem;">
-               Our method shows better robustness across different optical flow models. When switching from RAFT to GMFlow, our approach achieves a warping error reduction of <strong>1.08</strong>, while DiffIR2VR shows a larger reduction of <strong>1.648</strong>. This demonstrates that our method is more robust and consistent across different flow estimation techniques, as it shows smaller performance variations when changing the underlying optical flow model.
-             </p>
+            <table class="table is-bordered is-striped is-narrow is-centered" style="width: 60%; margin: 0 auto;">
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Warping Error Difference</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ours (GMFlow vs RAFT)</td>
+                  <td><strong>1.08</strong> lower</td>
+                </tr>
+                <tr>
+                  <td>DiffIR2VR (GMFlow vs RAFT)</td>
+                  <td>1.648 lower</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="has-text-justified" style="margin-top: 1rem;">
+              Our method exhibits stronger robustness across optical flow estimators, showing smaller performance variation when the underlying flow model changes.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Optical Flow Comparison Table -->
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Super-resolution Comparison on DAVIS</h2>
-      <div class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/comparison/davis_sr/lions.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/comparison/davis_sr/turtle.mp4"
-            type="video/mp4">
-          </video>
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Super-resolution Comparison on DAVIS</h2>
+        <div class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/comparison/davis_sr/lions.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/comparison/davis_sr/turtle.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
+  </section>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Denoising Comparison on DAVIS</h2>
-      <div class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/comparison/davis_dn/demolition.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/comparison/davis_dn/kart-turn.mp4"
-            type="video/mp4">
-          </video>
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Denoising Comparison on DAVIS</h2>
+        <div class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/comparison/davis_dn/demolition.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/comparison/davis_dn/kart-turn.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
- <!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Super-resolution Comparison on SPMC</h2>
-      <div class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/comparison/spmc_sr/cact1_001.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/comparison/spmc_sr/land9_007.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Denoising Comparison on SPMC</h2>
-      <div class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/comparison/spmc_dn/car05_001.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/comparison/spmc_dn/hdclub_001_002.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+  </section>
 
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Super-resolution Comparison on SPMC</h2>
+        <div class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/comparison/spmc_sr/cact1_001.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/comparison/spmc_sr/land9_007.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Denoising Comparison on SPMC</h2>
+        <div class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/comparison/spmc_dn/car05_001.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/comparison/spmc_dn/hdclub_001_002.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adapted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to reuse the source code of this website with attribution. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>

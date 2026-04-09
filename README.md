@@ -1,22 +1,35 @@
-# Supplementary Materials for CVPR Workshop NTIRE Paper Submission (ID 110)
+# DiTVR
 
-## DiTVR: Zero-Shot Diffusion Transformer for Video Restoration
+Official project page repository for the CVPR Workshop paper **DiTVR: Zero-Shot Diffusion Transformer for Video Restoration**.
 
-This repository contains the supplementary materials for an anonymous submission to the CVPR Workshop NTIRE track.
+## Authors
 
-### Contents
+Sicheng Gao, Nancy Mehta, Zongwei Wu, Radu Timofte  
+Computer Vision Lab, CAIDAS & IFI, University of Wurzburg
 
-- **Teaser Video**: Demonstrates the proposed method's capabilities in video restoration tasks, including super-resolution, denoising, deblurring, and colorization.
-- **Video Comparisons**: Side-by-side comparisons on the DAVIS and SPMC datasets for both super-resolution and denoising tasks.
-- **Paper Abstract**: A summary of our research and findings.
+## Project Page
 
-### How to View
+[https://ree1s.github.io/DITVR-CVPRW/](https://ree1s.github.io/DITVR-CVPRW/)
 
-Open `index.html` locally in your browser, or publish this folder with GitHub Pages.
+## Repository Structure
 
+- `index.html`: Main GitHub Pages entry.
+- `static/videos/`: Teaser and overview videos.
+- `static/comparison/`: Benchmark comparison videos.
+- `static/css/`, `static/js/`: Frontend assets.
 
-### License
+## Deployment
+
+This repository is structured as a GitHub Pages static website.
+
+1. Push the repository to GitHub.
+2. Open repository `Settings > Pages`.
+3. Set the source to the root of the default branch.
+
+## Note
+
+The project page is intended to be served from the repository GitHub Pages URL above.
+
+## License
 
 This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-
----
